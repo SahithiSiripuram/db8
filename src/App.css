@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+}
+
+:root {
+  --primary-color: #da0037;
+  --primary-color-light: #da0037;
+
+  --secondary-color: #ededed;
+  --secondary-color-dark: #171717;
+
+  --bg-color-light: #ededed;
+
+  --em-bg-color-1: white;
+  --em-bg-color-2: #171717;
+
+  --btn-primary: #da0037;
+  --midgrey: #ededed;
+  --danger: blue;
+  --light-grey: #ededed;
+  --light-grey2: #444444;
+  --textgrey: #000000;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 0.825rem;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #ededed;
+}
+
+.btn:disabled {
+  cursor: auto;
+}
+.btn:focus {
+  outline: 1px solid;
+}
+
+.btn-bubble {
+  padding: 0.6rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #000000;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.btn-square {
+  padding: 0.5rem;
+  border: 0;
+  background: var(--primary-color);
+  color: #000000;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.btn-outline-secondary {
+  background: transparent;
+  border: 1.5px solid var(--midgrey);
+  color: var(--midgrey);
+  margin-right: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  font-size: 0.825rem;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+.link:focus {
+  outline: 1px solid;
+}
+.text-color-secondary {
+  color: var(--secondary-color-dark);
+}
