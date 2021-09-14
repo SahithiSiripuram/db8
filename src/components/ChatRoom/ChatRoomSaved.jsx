@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 export const ChatRoomSaved = ({ chat }) => {
   return (
     <div className="grid-item-2 grid-item">
