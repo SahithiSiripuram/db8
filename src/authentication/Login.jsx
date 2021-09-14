@@ -55,15 +55,14 @@ export const Login = () => {
   });
   console.log(user);
   const signInWithGoogle = async () => {
-    await auth.signInWithPopup(provider);
-
-    const userObject = {
-      uid: user.uid,
-      displayName: user.displayName,
-      email: user.email,
-      photoURL: user.photoURL,
-    };
-    if (user) {
+    try {
+      await auth.signInWithPopup(provider);
+      const userObject = {
+        uid: user.uid,
+        displayName: user.displayName,
+        email: user.email,
+        photoURL: user.photoURL,
+      };
       await localStorage.setItem(
         "userCredentials",
         JSON.stringify({
@@ -74,6 +73,8 @@ export const Login = () => {
       authDispatch({ type: "SET_CURRENTUSER", payload: userObject });
       authDispatch({ type: "TOGGLE_LOGIN_STATE", payload: true });
       navigate("/");
+    } catch (error) {
+      setError("Signin not successful");
     }
   };
 
