@@ -15,7 +15,7 @@ import { useAuthentication } from '../../context';
 
 export function ChatRoom({ state }) {
 	const { chatId } = useParams();
-
+	console.log(chatId);
 	const messagesQuery = getMessageQueryFromChatId(chatId);
 
 	const [messages] = useCollectionData(messagesQuery, { idField: 'id' });

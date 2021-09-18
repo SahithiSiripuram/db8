@@ -3,13 +3,13 @@ import "firebase/auth";
 import "firebase/firestore";
 
 const config = {
-  apiKey: "AIzaSyAB8JbbubNtpHYStgKUCCXy1e1on1lgSEo",
-  authDomain: "db8-db3a2.firebaseapp.com",
-  projectId: "db8-db3a2",
-  storageBucket: "gs://db8-db3a2.appspot.com/",
-  messagingSenderId: "97867828262",
-  appId: "1:97867828262:web:497324bed0e5e14be6eae7",
-  measurementId: "G-36J9N24XPR",
+  apiKey: "AIzaSyC0ngUAoq9Q1dPL6-GU8vMofQI-Ka4j3Mg",
+  authDomain: "neog-hack211.firebaseapp.com",
+  projectId: "neog-hack211",
+  storageBucket: "neog-hack211.appspot.com",
+  messagingSenderId: "1042486466270",
+  appId: "1:1042486466270:web:b33413a8602d27e64b944f",
+  measurementId: "G-3QCS9EVNCK",
 };
 
 export default !firebase.apps.length
